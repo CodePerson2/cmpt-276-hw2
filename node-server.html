@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/node-server.css">
+        
+
+    </head>
+    <body onload="get('select')">
+        <table id="info">
+            <tr>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Height</th>
+            <th>Shape</th>
+            <th>Color</th>
+            <th>Pet</th>
+            <th>PetName</th>
+            <th>PetType</th>
+            <button id="getAll" onclick="get('select')">GetAllRows</button>
+            </tr>
+            
+            
+        
+        </table>
+        
+    
+        <div id = "sel">
+            <h2 id="title">Create Person</h1>
+            <div class="container" style="position: absolute;"><span class="one" id = "selPerson"></span><span class = "pet" id = "selPet"></span></div>
+            <div id = "container" style="position: absolute; right: 0; top: 5%;">
+            <input id = "name" type="text" name="name" maxlength="14" value="" placeholder="name"><br>
+            <hr>
+            <label>Size</label>
+            <input type="range" min="1" max="100" value="50" class="slider" id="size">
+            <label>Height</label>
+            <input type="range" min="1" max="100" value="50" class="slider" id="height">
+            <hr>
+            <div class="radioCont">
+                <input type="radio" class="radio" value = "0%" id="square" name="shape" checked="checked"><label>Square</label><br>
+                <input type="radio" class="radio" value = "25%" id="round-square" name="shape"><label>Roundish</label><br>
+                <input type="radio" class="radio" value = "50%" id="round" name="shape"><label>Round</label><br>
+            </div>
+            <hr>
+            <div class="radioCont">
+                <input type="radio" class="radio" value="red" id="red" name="color" checked="checked"><label>Red</label><br>
+                <input type="radio" class="radio" value="blue" id="blue" name="color"><label>Blue</label><br>
+                <input type="radio" class="radio" value="green" id="green" name="color"><label>Green</label><br>
+            </div>
+            <hr>
+            <div class="radioCont">
+                <label>Pet:</label>
+                <input type="radio" class="radio" value="inline-block" id="petY" name="pet" checked="checked"><label>Yes</label>
+                <input type="radio" class="radio" value="none" id="petN" name="pet"><label>No</label><br>
+            </div>
+            <hr>
+            <input id = "petName" type="text" value="" maxlength="14" placeholder="Pet name"><br>
+            <hr>
+            <div class="radioCont">
+                <label>PetType:</label>
+                <input type="radio" class="radio" value="50%" id="petR" name="petType" checked="checked"><label>Round</label>
+                <input type="radio" class="radio" value="0%" id="petS" name="petType"><label>Square</label><br>
+            </div>
+            <button id = "submitPerson" onclick="addVal()">Submit</button>
+            </div>
+        </div>
+        <div  id = "mid">
+            
+        </div>
+        
+        
+
+    <script type="text/javascript" src="./person.js"></script>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+/*for hw2 cmpt-276 node-server */
+
+body{
+    height: 100%;
+    background-color: pink;
+  }
+  .one{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: red;
+    margin-right: 17px;
+    width: 50px;
+    height: 100px;
+    vertical-align: bottom;
+    text-decoration-color: white;
+    border-radius: 0%;
+  }
+  #mid{
+    display: inline-block;
+    position: relative;
+    max-width: 60%;
+    left: 3%;
+    top: 30vh;
+    height: 40vh;
+    background-color: #ededed;
+    border-radius: 15px;
+    overflow: auto;
+  }
+  #sel{
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    height: 50vh;
+    left: 2%;
+    top: 30vh;
+    border-radius: 15px;
+    background-color: #ededed;
+  }
+  .container{
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+    margin-top: 30px;
+    padding: 0px 10px;
+    top: 30%;
+    
+  }
+  .pet{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    vertical-align: bottom;
+    border-radius: 0%;
+  }
+  .slider{
+    display: block;
+    position: relative;
+  }
+  .radioCont{
+    display: block;
+    position: relative;
+  }
+  .radio{
+    display: inline-block;
+    position: relative;
+  }
+  #submitPerson{
+    position: relative;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  #submitPerson:hover{
+    background-color: grey;
+  }
+  h2{
+    margin: 5px 5px;
+    font-family: sans-serif;
+    position: absolute;
+  }
+  .del{
+    position: absolute;
+    right: 0;
+  }
+  .up{
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+  #info{
+    display: inline-block;
+    background: #ededed;
+    position: absolute;
+    border-radius: 15px;
+    padding: 10px 10px;
+    border-collapse: collapse;
+    max-height: 18vh;
+    overflow: auto;
+    width: 620px;
+    
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #ededed;
+  }
+  tr:nth-child(even) {
+    background-color: white;
+  }
+  #getAll{
+
+    background: #ededed;
+    position: absolute;
+    left: 640px;
+    border-radius: 15px;
+
+  }
